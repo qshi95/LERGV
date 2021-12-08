@@ -1,0 +1,20 @@
+CUDA_VISIBLE_DEVICES=0 python run_tabfact.py \
+  --model_name_or_path bert-base-multilingual-cased \
+  --task_name tab_fact \
+  --train_file data/train.jsonl \
+  --validation_file data/val.jsonl \
+  --test_file data/test.jsonl \
+  --simple_test_file data/simple_test.jsonl \
+  --complex_test_file data/complex_test.jsonl \
+  --small_test_file data/small_test.jsonl \
+  --do_train \
+  --do_eval \
+  --max_seq_length 512 \
+  --per_device_train_batch_size 8 \
+  --learning_rate 1e-5 \
+  --num_train_epochs 6.0 \
+  --output_dir ./output/ \
+  --evaluation_strategy steps \
+  --warmup_steps 3000 \
+  --weight_decay 0.001 \
+  --fp16 \
