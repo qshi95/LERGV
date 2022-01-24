@@ -18,5 +18,5 @@ Training and Evaluating
 -------
 Run the following command to run the code.
 ```bash
-run run.sh
+bash run.sh
 ```
