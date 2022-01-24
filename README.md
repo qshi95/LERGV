@@ -7,6 +7,16 @@ Data
 -------
 The data is in the [release](https://github.com/qshi95/LERGV/releases/tag/data). Please unzip it and put all files in the [data](https://github.com/qshi95/LERGV/tree/main/data) folder.
 
+Setup
+-------
+Run the following command to install the dependency packages.
+```bash
+pip install -r requirements.txt
+```
+
 Training and Evaluating
 -------
-Run [run.sh](https://github.com/qshi95/LERGV/blob/main/run.sh) to run the code. 
+Run the following command to run the code.
+```bash
+run run.sh
+```
